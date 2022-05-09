@@ -14,8 +14,7 @@ nav {
     margin-top: 12px;
     object-fit: cover;
     animation: banner 15s infinite;
-    border-top: 1px solid rgb(255, 253, 253, 0.8);
-    border-bottom: 1px solid rgb(255, 253, 253, 0.8);
+
 }
 @keyframes banner {
     0%,25% {
@@ -45,6 +44,7 @@ nav {
         font-size: 40px;
         font-weight: 700;
         margin: 10px 0;
+        margin-top: 15px;
         color: white;
     }
         .header-info {
@@ -190,6 +190,9 @@ nav {
     footer a {
         text-decoration: none;
         color: black;
+    }
+    .ubicacion {
+        margin: 0 5px;
     }
     .email {
         display: flex;
