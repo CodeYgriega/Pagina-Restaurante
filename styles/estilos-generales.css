@@ -109,7 +109,7 @@ nav {
         color: black;
         background-color:white;
         margin: 2px 0;
-        padding: 40px 20px;
+        padding: 30px 40px;
         text-align: center;
     }
     main h1 {
@@ -127,7 +127,7 @@ nav {
     }
     main p {
         font-size: 17px;
-        padding-top: 15px;
+        padding-top: 10px;
         line-height: 1.4em;
     }
 
