@@ -38,13 +38,13 @@ nav {
         font-size: 16px;
         color: white;
         margin-left: 5px;
+        line-height: 1.4em;
         background: radial-gradient(rgb(19, 18, 18) 10%, black);
     }
     #logo {
         font-size: 40px;
         font-weight: 700;
-        margin-top: 5px;
-        margin-bottom: 2px;
+        margin: 10px 0;
         color: white;
     }
         .header-info {
@@ -61,7 +61,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         background-color: rgba(0, 0, 0, 0.7);
-        padding: 7px;
+        padding: 0 7px;
         width: 100%;
         height: 20%;
     }
@@ -108,13 +108,13 @@ nav {
         text-align: center;
     }
     main h1 {
-        font-size: 32px;
+        font-size: 30px;
         line-height: 1.1em;
     }
     main p {
-        font-size: 18px;
+        font-size: 17px;
         padding-top: 15px;
-        line-height: 1.3em;
+        line-height: 1.4em;
     }
 
     .especialidades {
@@ -172,7 +172,7 @@ nav {
     footer {
         background-color: white;
         color: black;
-        margin-top: 70px;
+        margin-top: 0px;
         padding-top: 70px;
         text-align: center;
         display: flex;
@@ -181,10 +181,10 @@ nav {
         justify-content: center;
         gap: 50px;
         font-size: 17px;
-        line-height: 1.5em;
+        line-height: 2em;
     }
     footer h5 {
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         font-size: 27px;
     }
     footer a {
