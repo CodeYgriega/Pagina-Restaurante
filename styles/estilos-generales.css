@@ -14,7 +14,7 @@ body {
 #pagina-desktop {
     display: none;
 }
-nav {
+.nav-mobile {
     width: 100%;
     height: 320px;
     background-size: 100% 100%;
@@ -56,7 +56,7 @@ nav {
     }
         .header-info {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 7px;
         }
         .info-header-icon {
@@ -245,7 +245,7 @@ nav {
         padding-bottom: 30px;
     }
 
-    footer {
+    .footer-mobile {
         background-color: white;
         color: black;
         margin-top: 0px;
@@ -259,12 +259,12 @@ nav {
         font-size: 17px;
         line-height: 2em;
     }
-    footer h5 {
+    .footer-mobile h5 {
         margin-bottom: 15px;
         font-size: 27px;
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    footer a {
+    .footer-mobile a {
         text-decoration: none;
         color: black;
     }
@@ -289,7 +289,7 @@ nav {
         #pagina-desktop {
             display: none;
         }
-        nav {
+        .nav-mobile {
             height: 380px;
         }
     }
@@ -334,7 +334,7 @@ nav {
             .menu-desplegado li {
                 padding: 17px 0;
             }
-        nav {
+        .nav-mobile {
             height: 480px;
         }
         .main h1 {
@@ -406,12 +406,12 @@ nav {
             padding: 0px 70px;
             font-size: 19px;
         }
-        footer {
+        .footer-mobile {
             padding-top: 80px;
             gap: 60px;
             font-size: 19px;
         }
-        footer h5 {
+        .footer-mobile h5 {
             margin-bottom: 20px;
             font-size: 30px;
         }
@@ -431,7 +431,7 @@ nav {
         #pagina-desktop {
             display: none;
         }
-        nav {
+        .nav-mobile {
             height: 500px;
         }
     }
@@ -443,4 +443,129 @@ nav {
             display: block;
         }
     }
+
+    @media screen and (min-width: 1000px) {
+    #pagina-desktop {
+        display: block;
+    }
+    .header-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-size: 100% 100%;
+        object-fit: cover;
+        animation: banner-desktop 15s infinite;
+    }
+    @keyframes banner-desktop {
+        0%,25% {
+            background-image: url(/img/index/banner/banner1.jpg);
+        }
+        27%, 50% {
+            background-image: url(/img/index/banner/banner2.jpg);
+        }
+        52%,75% {
+            background-image: url(/img/index/banner/banner3.jpg);
+        }
+        77%,100% {
+            background-image: url(/img/index/banner/banner4.jpg);
+        }
+    }
+    .container-logo-e-info {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    .logo-ubicacion-telefono {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        font-size: 18px;
+    }
+        #logo-desktop {
+            font-family: 'Pacifico', cursive;
+            font-size: 45px;
+        }
+    .ubicacion-telefono {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ubicacion {
+        display: flex;
+        gap: 7px;
+    }
+    .telefono {
+        display: flex;
+        gap: 7px;
+    }
+
+    /*COMIENZA LA NAV-BAR*/
+
+    .container-nav-socials {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9)
+    }
+    .nav-socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        font-size: 18px;
+    }
+    .nav-desktop {
+        display: flex;
+        list-style: none;
+    }
+    .nav-desktop a {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+    }
+        .nav-desktop a:hover {
+            background-color: rgb(129, 97, 16, 0.7);
+        }
+    .social-icons-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8%;
+        gap: 15px;
+    }
+
+    /*COMIENZA EL MAIN*/
+
+    .main-desktop {
+        background-color: black;
+        color:white;
+        padding: 30px 0px;
+        text-align: center;
+    }
+    .main-desktop h1 {
+        font-size: 40px;
+        line-height: 1.7em;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .main-desktop h1 span {
+        background-color:rgb(129, 97, 16);
+        color: white;
+        padding: 2px 10px;
+        border-radius: 10px;
+        font-size: 40px;
+        font-family: 'Pacifico', cursive;
+    }
+    .main-desktop p {
+        font-size: 19px;
+        padding: 15px 100px;
+        line-height: 1.4em;
+    }
+    /*COMIENZAN LAS ESPECIALIDADES*/
+    
+
+}
 
