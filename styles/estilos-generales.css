@@ -53,6 +53,7 @@ body {
         margin-top: 15px;
         color: white;
         font-family: 'Pacifico', cursive;
+        text-shadow: 2px 3px 3px black;
     }
         .header-info {
             display: flex;
@@ -107,13 +108,23 @@ body {
         color: white;
         text-decoration: none;
     }
-
+    .container-main {
+        width: 100%;
+        height: 350px;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/index/fondos/abstracto-main.jpg);
+    }
     .main {
-        color: black;
-        background-color:white;
-        margin: 2px 0;
+        width: 80%;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.9);
         padding: 30px 20px;
         text-align: center;
+        border-radius: 20px;
     }
     .main h1 {
         font-size: 30px;
@@ -121,12 +132,13 @@ body {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     .main h1 span {
-        background-color:rgb(129, 97, 16);
-        color: white;
+        background-color: rgba(250, 250, 250, 0.2);
+        color: rgba(250, 250, 250, 1);
         padding: 2px 10px;
         border-radius: 10px;
         font-size: 32px;
         font-family: 'Pacifico', cursive;
+        text-shadow: 2px 3px 3px black;
     }
     .main p {
         font-size: 17px;
@@ -458,6 +470,19 @@ body {
         object-fit: cover;
         animation: banner-desktop 15s infinite;
     }
+    .header-banner::after {
+        content: "YourSite siempre es la mejor opción";
+        font-size: 45px;
+        background-color: rgb(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        font-family: 'Pacifico', cursive;
+        display: flex;
+        justify-content: center;
+        padding-top: 12%;
+        text-shadow: 2px 3px 3px black;
+        letter-spacing: 1px;
+    }
     @keyframes banner-desktop {
         0%,25% {
             background-image: url(/img/index/banner/banner1.jpg);
@@ -488,6 +513,7 @@ body {
         #logo-desktop {
             font-family: 'Pacifico', cursive;
             font-size: 45px;
+            text-shadow: 2px 3px 3px black;
         }
     .ubicacion-telefono {
         display: flex;
@@ -540,11 +566,25 @@ body {
 
     /*COMIENZA EL MAIN*/
 
+    .container-main-desktop {
+        width: 100%;
+        height: 400px;
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/img/index/fondos/abstracto-main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .main-desktop {
-        background-color: black;
-        color:white;
-        padding: 30px 0px;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
         text-align: center;
+        padding: 50px 80px;
+        border-radius: 20px;
     }
     .main-desktop h1 {
         font-size: 40px;
@@ -552,17 +592,19 @@ body {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     .main-desktop h1 span {
-        background-color:rgb(129, 97, 16);
-        color: white;
-        padding: 2px 10px;
+        background-color: rgba(250, 250, 250, 0.2);
+        color: rgba(250, 250, 250, 1);
+        padding: 2px 20px;
         border-radius: 10px;
         font-size: 40px;
+        font-weight: 700;
         font-family: 'Pacifico', cursive;
+        text-shadow: 2px 3px 3px black;
     }
     .main-desktop p {
-        font-size: 19px;
-        padding: 15px 100px;
+        font-size: 24px;
         line-height: 1.4em;
+        padding-top: 10px;
     }
     /*COMIENZAN LAS ESPECIALIDADES*/
     
